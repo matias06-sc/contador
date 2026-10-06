@@ -1,0 +1,27 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    </style>
+</head>
+<body>
+    <h2>Contador</h2>
+    <div id ="numero">0</div>
+    <button onclick="disminuir()">Disminuir</button>
+    <button onclick="aumentar()">Aumentar</button>
+    <script>
+        let contador = 0;
+        const textoNumero = document.getElementById("numero");
+        function aumentar() {
+            contador=contador+1;
+            textoNumero.innerText = contador;
+        }
+        function disminuir() {
+            contador=contador-1;
+            textoNumero.innerText = contador;
+        }
+    </script>
+</body>
+
+</html>
